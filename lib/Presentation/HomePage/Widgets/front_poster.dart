@@ -1,5 +1,6 @@
 //import 'dart:math';
 
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movie_database/Application/Home/home_page_bloc.dart';
@@ -20,15 +21,19 @@ class FrontPostar extends StatelessWidget {
     //final int randomIndex = Random().nextInt(img.length);
     return Stack(
       children: [
-        Container(
-          height: 550,
-          width: double.infinity,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-            image: NetworkImage(img[0]),
-            fit: BoxFit.fill,
-          )),
-        ),
+        CarouselSlider(
+            items: img
+                .map((e) => Center(
+                      child: Image(
+                        image: NetworkImage(e),
+                        fit: BoxFit.cover,
+                      ),
+                    ))
+                .toList(),
+            options: CarouselOptions(
+                height: 550,
+                autoPlay: true,
+                autoPlayInterval: const Duration(seconds: 3))),
         Positioned(
             left: 0,
             right: 0,
@@ -45,7 +50,7 @@ class FrontPostar extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.only(top: 50),
                   child: Text(
-                    '#1 Trending..',
+                    'Trendings..',
                     style: TextStyle(
                         color: kwhiteColor, fontWeight: FontWeight.bold),
                   ),

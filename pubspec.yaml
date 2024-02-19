@@ -9,20 +9,20 @@ environment:
 dependencies:
   animated_splash_screen: ^1.3.0
   bloc: null
+  carousel_slider: ^4.2.1
   dartz: ^0.10.1
   dio: ^5.3.3
   flutter:
     sdk: flutter
-  google_fonts: ^6.1.0
   flutter_bloc: ^8.1.3
   freezed_annotation: ^2.4.1
   get_it: ^7.2.0
+  google_fonts: ^6.1.0
   injectable: ^1.5.3
   intl: ^0.18.1
   json_annotation: ^4.8.1
   json_serializable: ^6.7.1
   share_plus: ^4.0.3
-  
   stroke_text: any
 
 dev_dependencies:
@@ -36,5 +36,5 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-     - assets/logp.jpg
-     - assets/lo.png
+    - assets/logp.jpg
+    - assets/lo.png
