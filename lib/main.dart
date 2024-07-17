@@ -40,6 +40,7 @@ class MainApp extends StatelessWidget {
         child: MaterialApp(
           home: Home(),
           theme: ThemeData(
+            useMaterial3: false,
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
           debugShowCheckedModeBanner: false,
