@@ -31,16 +31,17 @@ class ComingSoon extends StatelessWidget {
               labelColor: kblackColor,
               unselectedLabelColor: kwhiteColor,
               indicator: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(25),
                   gradient: RadialGradient(
-                      radius: 2,
-                      colors: [Colors.red.shade400, Colors.red.shade800])),
+                    radius: 2,
+                    colors: [Colors.red.shade400,Colors.red.shade800]
+                  )) ,
               tabs: const [
                 Tab(
-                  text: 'Movies',
+                  text: '          Movies           ',
                 ),
                 Tab(
-                  text: 'Tv Series',
+                  text: '         Tv Series         ',
                 )
               ],
             ),
