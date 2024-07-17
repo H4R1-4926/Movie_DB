@@ -130,7 +130,7 @@ class MovieDetailsCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      width: 300,
+                      width: 270,
                       child: Text(
                         mov.name ?? mov.title ?? 'NO Title',
                         style: GoogleFonts.poppins(

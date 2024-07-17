@@ -81,7 +81,7 @@ class TvSeriesComingSoon extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               SizedBox(
-                                width: 300,
+                                width: 270,
                                 child: Text(
                                   tv.name ?? tv.title ?? 'NO Title Provided',
                                   overflow: TextOverflow.ellipsis,
